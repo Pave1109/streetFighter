@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- название сайта сверху -->
+    <title>Street fight</title>
+    <!-- файл стиля -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <!-- Текст на странице -->
+    <div class="info">
+        <p>
+            W A D - бег и прыжок (ENG раскладка)<br>
+            Пробел - удар<br>
+            Стрелочки для второго игрока.<br>
+            Стрелка вниз - удар<br>
+        </p>
+    </div>
+    <!-- объявление классов -->
+    <div class="container">
+        <div class="health-bar-container">
+            <div class="player1-info-container">
+                <div class="player1-damaged"></div>
+                <div id="playerHealth" class="player1-health"></div>
+            </div>
+
+            <div id="timer" class="timer">60</div>
+
+            <div class="player2-info-container">
+                <div class="player2-damaged"></div>
+                <div id="player2Health" class="player2-health"></div>
+            </div>
+            <div></div>
+        </div>
+        <div id="displayText" class="display-text">Ничья</div>
+        <canvas></canvas>
+    </div>
+    <!-- задаем файл java script -->
+    <script src="script.js"></script>
+</body>
+</html>
